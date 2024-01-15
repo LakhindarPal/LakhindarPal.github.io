@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Crafting immersive digital experiences through expertise in HTML, CSS, JavaScript, React, NodeJS, and MongoDB. Explore my portfolio for innovative web solutions, open-source contributions, and a journey fueled by passion and continuous learning. Let's collaborate on transforming your ideas into captivating online realities.">
+  <meta name="author" content="Lakhindar Pal">
+
+  <!-- Open Graph tags -->
+  <meta property="og:title" content="Web Developer Portfolio">
+  <meta property="og:description" content="Crafting immersive digital experiences through expertise in HTML, CSS, JavaScript, React, NodeJS, and MongoDB. Explore my portfolio for innovative web solutions, open-source contributions, and a journey fueled by passion and continuous learning. Let's collaborate on transforming your ideas into captivating online realities.">
+  <meta property="og:image" content="icons/avatar-1200x630.webp">
+  <meta property="og:image:alt" content="Web Developer Portfolio Thumbnail">
+  <meta property="og:url" content="https://lakhindar.is-a.dev">
+
+  <!-- Twitter Card tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Web Developer Portfolio">
+  <meta name="twitter:description" content="Crafting immersive digital experiences through expertise in HTML, CSS, JavaScript, React, NodeJS, and MongoDB. Explore my portfolio for innovative web solutions, open-source contributions, and a journey fueled by passion and continuous learning. Let's collaborate on transforming your ideas into captivating online realities.">
+  <meta name="twitter:image" content="icons/avatar-1200x630.webp">
+  <meta property="twitter:image:alt" content="Web Developer Portfolio Thumbnail">
+  <meta property="twitter:url" content="https://lakhindar.is-a.dev">
+
+  <title>Lakhindar Pal - Web Developer</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+  <script src="https://web3forms.com/client/script.js" async defer></script>
+  <link rel="canonical" href="https://lakhindar.is-a.dev">
+
+  <!-- Apple Touch Icon -->
+  <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-180x180.png">
+
+  <!-- Android Chrome Icons -->
+  <link rel="icon" sizes="192x192" href="icons/android-icon-192x192.png">
+  <link rel="icon" sizes="512x512" href="icons/android-icon-512x512.png">
+
+  <!-- Favicon.ico -->
+  <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="icons/favicon-48x48.png">
+
+  <!-- Microsoft Tile Icons -->
+  <meta name="msapplication-TileImage" content="icons/mstile-70x70.png">
+  <meta name="msapplication-TileImage" content="icons/mstile-150x150.png">
+  <meta name="msapplication-TileImage" content="icons/mstile-310x310.png">
+  <meta name="msapplication-TileColor" content="#3498db">
+
+  <meta name="theme-color" content="#3498db">
+  <meta http-equiv="Content-Language" content="en">
+
+  <link rel="manifest" href="pwa/manifest.json">
+  <meta name="msapplication-config" content="pwa/browserconfig.xml" />
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker
+        .register("pwa/sw.js")
+        .then((reg) => console.log("Service Worker registered", reg))
+        .catch((err) =>
+          console.error("Service Worker **not** registered", err)
+        );
+    } else {
+      console.warn("Service Worker not supported in this browser");
+    }
+  </script>
+</head>
+
+<body>
+  <div id="navbar">
+    <nav>
+      <a href="#"><img id="logo" src="icons/site-logo-24x24.webp" alt="website logo" height="24" width="24"></a>
+      <a href="#about">About Me</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div id="control-btn">
+      <button id="sunMoonIcon">☀︎</button>
+      <button id="hamburger">&#9776;</button>
+    </div>
+  </div>
+
+  <main>
+    <header>
+      <img id="avatar" src="icons/avatar-300x300.webp" alt="Avatar of Lakhindar Pal" width="300" height="300">
+      <h1>Lakhindar Pal</h1>
+      <p id="tagline-text"></p>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Greetings! I'm a dedicated and detail-oriented Full Stack Web Developer from India with a unique background. Despite completing my B.Sc. in Physics, my passion for coding led me to master a diverse set of technologies, including HTML5, CSS3, JavaScript, React, NodeJS, MongoDB and more.</p>
+      <p>Beyond the realm of coding, I am an anime enthusiast. Engaging narratives and vivid storytelling within the captivating anime universe serve as my wellspring of creativity and motivation.</p>
+      <p>Perpetually eager to learn and collaborate, I actively seek out intriguing projects where innovation and teamwork converge. Let's embark on a journey of constant growth and impactful collaboration.</p>
+
+      <div>
+        <a href="https://lakhindar.is-a-good.dev" target="_blank" aria-label="Get in touch with Lakhindar Pal">
+          <button style="width: 150px;">
+            <svg xmlns="http://www.w3.org/2000/svg" height="14" width="14" viewBox="0 0 512 512">
+              <path d="M320 0a32 32 0 1 0 0 64h83L201 265a32 32 0 0 0 46 46l201-202v83a32 32 0 1 0 64 0V32c0-18-14-32-32-32H320zM80 32C36 32 0 68 0 112v320c0 44 36 80 80 80h320c44 0 80-36 80-80V320a32 32 0 1 0-64 0v112c0 9-7 16-16 16H80c-9 0-16-7-16-16V112c0-9 7-16 16-16h112a32 32 0 1 0 0-64H80z" fill="#fff" />
+            </svg>
+            <span> Get in touch</span>
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li class="edu">
+          <h3>Bachelor of Science in Physics</h3>
+          <p>Ramananda College, WB, India</p>
+          <p><strong>Graduation:</strong> 2023</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="container">
+
+        <div class="category">
+          <h3>Languages</h3>
+          <div class="skill-set">
+            <img src="logos/javascript.svg" alt="JavaScript">
+            <img src="logos/typescript.svg" alt="TypeScript">
+            <img src="logos/c.svg" alt="C Lang">
+          </div>
+        </div>
+
+        <div class="category">
+          <h3>Front-end</h3>
+          <div class="skill-set">
+            <img src="logos/html5.svg" alt="HTML5">
+            <img src="logos/css3.svg" alt="CSS3">
+            <img src="logos/react.svg" alt="React">
+            <img src="logos/bootstrap.svg" alt="Bootstrap">
+            <img src="logos/tailwindcss.svg" alt="Tailwind CSS">
+          </div>
+        </div>
+
+        <div class="category">
+          <h3>Back-end</h3>
+          <div class="skill-set">
+            <img src="logos/nodejs.svg" alt="Node JS">
+            <img src="logos/express.svg" alt="ExpressJS">
+            <img src="logos/discordjs.svg" alt="Discord.js">
+            <img src="logos/npmjs.svg" alt="NPM">
+          </div>
+        </div>
+
+        <div class="category">
+          <h3>Database</h3>
+          <div class="skill-set">
+            <img src="logos/mongodb.svg" alt="MongoDB">
+            <img src="logos/mysql.svg" alt="MySQL">
+          </div>
+        </div>
+
+        <div class="category">
+          <h3>Tools</h3>
+          <div class="skill-set">
+            <img src="logos/git.svg" alt="Git">
+            <img src="logos/github.svg" alt="GitHub">
+            <img src="logos/vscode.svg" alt="VS Code Editor">
+          </div>
+        </div>
+
+        <div class="category">
+          <h3>Hosting</h3>
+          <div class="skill-set">
+            <img src="logos/heroku.svg" alt="Heroku">
+            <img src="logos/railway.svg" alt="Railway">
+            <img src="logos/vercel.svg" alt="Vercel">
+            <img src="logos/netlify.svg" alt="Netlify">
+          </div>
+        </div>
+
+        <div class="category">
+          <h3>Playgrounds</h3>
+          <div class="skill-set">
+            <img src="logos/codepen.svg" alt="CodePen">
+            <img src="logos/jsfiddle.svg" alt="JSFiddle">
+            <img src="/logos/glitch.svg" alt="Glitch">
+            <img src="logos/replit.svg" alt="Replit">
+          </div>
+        </div>
+
+        <div class="category">
+          <h3>Soft Skills</h3>
+          <ul class="skill-set soft-skills">
+            <li>Communication</li>
+            <li>Teamwork</li>
+            <li>Problem-solving</li>
+          </ul>
+        </div>
+
+      </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Work Experience</h2>
+      <ul>
+        <li class="exp">
+          <h3>Open source contributor</h3>
+          <p>In the absence of a traditional computer science degree, my self-taught journey into web development has proven to be both rich and rewarding.</p>
+          <p>While lacking formal professional experience, my commitment to the field shines through my active contributions to open source projects.</p>
+          <p><strong>Duration:</strong> 2021 - Present</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="achievements">
+      <h2>Accomplishments</h2>
+      <ol>
+        <li class="achv">
+          <h3>Hacktoberfest 2021 Triumph:</h3>
+          <p>Recognized for outstanding contributions during Hacktoberfest 2021, showcasing my commitment to collaborative development within the open source community.</p>
+          <p><strong>Date:</strong> October 2021</p>
+        </li>
+
+        <li class="achv">
+          <h3>Pioneering Self-Taught Path:</h3>
+          <p>Mastery in web development attained through a self-driven learning odyssey, reflecting resilience and passion for diverse technological skills.</p>
+          <p><strong>Date:</strong> on-going</p>
+        </li>
+
+      </ol>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <img src="https://dummyimage.com/600x400" alt="Screenshot of Almighty bot" height="400" width="600" loading="lazy">
+        <h3>Almighty - Discord Multipurpose Bot</h3>
+        <p>Almighty transcends the role of a typical Discord bot; it stands as a versatile tool meticulously to elevate server experience. It stands as a testament to my unwavering commitment to innovation in crafting dynamic and impactful digital solutions.</p>
+        <p><strong>Technologies:</strong> Node.js, Discord.js, MongoDB, Express, EJS</p>
+        <a href="https://github.com/LakhindarPal/Almighty" target="_blank" rel="noopener noreferrer">Source Code</a>
+        <a href="https://discord.ly/almighty" target="_blank" rel="noopener noreferrer">Live Demo</a>
+      </div>
+
+      <div class="project">
+        <img src="https://dummyimage.com/600x400" alt="Screenshot of Portfolio website" height="400" width="600" loading="lazy">
+        <h3>Portfolio Website</h3>
+        <p>My portfolio website seamlessly blends aesthetics and functionality. It showcases not just my skills but a testament to my commitment to creating visually appealing and interactive web experiences. Dive into a journey of innovation and proficiency as you explore my digital haven.</p>
+        <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+        <a href="https://github.com/LakhindarPal/portfolio" target="_blank" rel="noopener noreferrer">Source Code</a>
+        <a href="https://lakhindar.is-a.dev" target="_blank" rel="noopener noreferrer">Live Demo</a>
+      </div>
+
+      <div class="project">
+        <img src="https://dummyimage.com/600x400" alt="Screenshot of MyAniJot app=" height="400" width="600" loading="lazy">
+        <h3>MyAniJot - Anime Listing Web App</h3>
+        <p>MyAniJot empowers users to effortlessly track watched and planned anime. Demonstrating proficiency in crafting user-friendly interfaces and dynamic functionality, it embodies my commitment to creating seamless and engaging digital experiences.</p>
+        <p><strong>Technologies:</strong> MERN Stack (MongoDB, Express, React, Node.js)</p>
+        <a href="https://github.com/LakhindarPal/MyAniJot" target="_blank" rel="noopener noreferrer">Source Code</a>
+        <a href="https://myanijot.verceel.app" target="_blank" rel="noopener noreferrer">Live Demo</a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 id="contact-heading">Contact Me</h2>
+      <p>Feel free to reach out if you have any inquiries or opportunities.</p>
+
+      <form action="https://api.web3forms.com/submit" method="POST" id="web3form" aria-labelledby="contact-heading">
+
+        <input type="hidden" name="access_key" id="access_key" value="14ac1ded-55db-42d2-acf6-f48b5a1593f9" aria-hidden="true" />
+        <input type="hidden" name="from_name" id="from_name" value="new message from portfolio website" aria-hidden="true" />
+        <input type="hidden" name="redirect" id="redirect" value="https://lakhindar.is-a.dev/success.html" aria-hidden="true" />
+        <input type="checkbox" name="botcheck" id="botcheck" style="display: none;" aria-hidden="true" />
+
+        <label for="name">Full Name</label>
+        <input type="text" name="name" id="name" placeholder="John Doe" required />
+
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email" placeholder="your.email@example.com" required />
+
+        <label for="subject">Subject</label>
+        <input type="text" name="subject" id="subject" placeholder="Message subject here" required />
+
+        <label for="message">Your Message</label>
+        <textarea rows="5" name="message" id="message" placeholder="Type your message here....." required></textarea>
+
+        <button type="submit" id="send-btn" name="submit">Send</button>
+
+        <p id="result"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Lakhindar. All rights reserved.</p>
+    <div id="social">
+      <a href="https://www.linkedin.com/in/LakhindarPal" target="_blank" rel="noopener noreferrer"><img src="logos/linkedin.svg" alt="Professional network on LinkedIn"></a>
+      <a href="mailto:hello@lakhindar.is-a.dev"><img src="logos/email.svg" alt="Send me a Email"></a>
+      <a href="https://github.com/LakhindarPal" target="_blank" rel="noopener noreferrer"><img src="logos/github.svg" alt="View projects on GitHub"></a>
+      <a href="https://dev.to/LakhindarPal" target="_blank" rel="noopener noreferrer"><img src="logos/devto.svg" alt="Read blogs on Dev.to"></a>
+      <a href="https://discord.gg/" target="_blank" rel="noopener noreferrer"><img src="logos/discord.svg" alt="Connect on Discord"></a>
+      <a href="https://www.buymeacoffee.com/LakhindarPal" target="_blank" rel="noopener noreferrer"><img src="logos/buy-me-a-coffee.svg" alt="Buy Me A Coffee"></a>
+    </div>
+  </footer>
+
+</body>
+
+</html>

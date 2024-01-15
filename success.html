@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Lakhindar Pal">
+
+  <title>Contact Lakhindar Pal- Success</title>
+  <meta name="robots" content="noindex, nofollow">
+  <style>
+    :root {
+      --color-background: #f8f8f8;
+      --theme-primary: #1e5799;
+      --theme-secondary: #2989d8;
+      --color-distinct: #fff;
+      --color-text: #333;
+    }
+
+    html[data-theme="dark"] {
+      --color-background: #1a1a1a;
+      --theme-primary: #0c324c;
+      --theme-secondary: #165b8c;
+      --color-distinct: #fff;
+      --color-text: #ddd;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Ubuntu, Roboto, sans-serif;
+      background-color: var(--color-background);
+      color: var(--color-text);
+    }
+
+    #success {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 20px;
+      padding: 20px;
+    }
+
+    img {
+      width: 300px;
+      margin: 20px;
+    }
+
+    button {
+      padding: 12px 20px;
+      background-color: var(--theme-secondary);
+      color: var(--color-distinct);
+      border: 1px solid var(--theme-primary);
+      cursor: pointer;
+      border-radius: 6px;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    button:hover {
+      background-color: var(--theme-primary);
+      border: 1px solid var(--theme-secondary);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="success">
+    <img src="https://i.giphy.com/YlSR3n9yZrxfgVzagm.webp" alt="Checkmark">
+
+    <h3>Message sent successfully!</h3>
+    <p>Thank you! I will reply to you soon!
+    </p>
+
+    <p>Redirecting back to the main page.....</p>
+    <button onclick="gobackManually()">Go Back Now</button>
+  </div>
+
+  <script>
+    //auto redirect 
+    setTimeout(function() {
+      window.location.href = "/";
+    }, 3000);
+
+    // Function for manual back
+    function gobackManually() {
+      window.location.href = "/";
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      //theme
+      const htmlEl = document.querySelector("html");
+      const currentTheme = localStorage.getItem("theme") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+
+      htmlEl.dataset.theme = currentTheme;
+    });
+  </script>
+
+</body>
+
+</html>
