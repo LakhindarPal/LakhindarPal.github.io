@@ -193,7 +193,7 @@ section {
 }
 
 button {
-  padding: 12px 20px;
+  padding: 12px 14px;
   background-color: var(--primary-theme);
   color: var(--distinct-color);
   border: none;
@@ -230,8 +230,7 @@ textarea {
 input,
 textarea,
 button {
-  font-family: inherit;
-  font-size: inherit;
+  font: inherit;
 }
 
 #social {
@@ -258,6 +257,7 @@ button {
   position: sticky;
   top: 0;
   width: 100%;
+  z-index: 2;
 }
 
 #navbar a {
@@ -306,7 +306,7 @@ button {
 #logo {
   border-radius: 50%;
   padding: auto;
-  height: 16px;
+  height: 100%;
   width: auto;
 }
 
