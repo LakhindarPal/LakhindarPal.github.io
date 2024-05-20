@@ -15,7 +15,7 @@ self.addEventListener("install", (e) => {
     (async () => {
       const cache = await caches.open(cacheName);
       await cache.addAll(cacheFiles);
-    })(),
+    })()
   );
 });
 
@@ -35,6 +35,6 @@ self.addEventListener("fetch", (event) => {
       const cache = await caches.open(cacheName);
       cache.put(event.request, networkResponse.clone());
       return networkResponse;
-    })(),
+    })()
   );
 });

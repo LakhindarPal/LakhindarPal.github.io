@@ -1,97 +1,93 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Lakhindar Pal" />
 
-    <title>Contact Lakhindar Pal- Success</title>
-    <meta name="robots" content="noindex, nofollow" />
-    <style>
-      :root {
-        color-scheme: dark;
-        --background-color: #1a202c;
-        --text-color: #cbd5e0;
-        --primary-color: #ffffff;
-        --accent-color: #3b82f6;
-        --accent-color-alt: #2563eb;
-      }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Lakhindar Pal">
 
-      * {
-        box-sizing: border-box;
-      }
+  <title>Contact Lakhindar Pal- Success</title>
+  <meta name="robots" content="noindex, nofollow">
+  <style>
+    :root {
+      color-scheme: dark;
+      --background-color: #1a202c;
+      --text-color: #cbd5e0;
+      --primary-color: #ffffff;
+      --accent-color: #3b82f6;
+      --accent-color-alt: #2563eb;
+    }
 
-      html {
-        color-scheme: dark;
-      }
+    * {
+      box-sizing: border-box;
+    }
 
-      body {
-        font-family:
-          system-ui,
-          -apple-system,
-          "Segoe UI",
-          Ubuntu,
-          Roboto,
-          sans-serif;
-        background-color: var(--background-color);
-        color: var(--text-color);
-        text-align: center;
-      }
+    html {
+      color-scheme: dark;
+    }
 
-      main {
-        display: flex;
-        flex-direction: column;
-        place-items: center;
-      }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Ubuntu, Roboto, sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      text-align: center;
+    }
 
-      img {
-        width: 300px;
-      }
+    main {
+      display: flex;
+      flex-direction: column;
+      place-items: center;
+    }
 
-      h1 {
-        color: var(--accent-color);
-      }
+    img {
+      width: 300px;
+    }
 
-      p {
-        text-wrap: balance;
-      }
+    h1 {
+      color: var(--accent-color);
+    }
 
-      button {
-        padding: 1rem 2rem;
-        background-color: var(--accent-color);
-        color: var(--primary-color);
-        cursor: pointer;
-        border-radius: 0.5rem;
-        transition: background-color 0.3s ease-in-out;
-      }
+    p {
+      text-wrap: balance;
+    }
 
-      button:hover {
-        background-color: var(--accent-color-alt);
-      }
-    </style>
-  </head>
+    button {
+      padding: 1rem 2rem;
+      background-color: var(--accent-color);
+      color: var(--primary-color);
+      cursor: pointer;
+      border-radius: 0.5rem;
+      transition: background-color 0.3s ease-in-out;
+    }
 
-  <body>
-    <main>
-      <img src="https://i.giphy.com/YlSR3n9yZrxfgVzagm.webp" alt="Checkmark" />
+    button:hover {
+      background-color: var(--accent-color-alt);
+    }
+  </style>
+</head>
 
-      <h1>Message sent successfully!</h1>
-      <p>Thank you! I will reply to you soon!</p>
+<body>
+  <main>
+    <img src="https://i.giphy.com/YlSR3n9yZrxfgVzagm.webp" alt="Checkmark">
 
-      <p>Redirecting back to the homepage.....</p>
-      <button type="button">Go Back Now</button>
-    </main>
+    <h1>Message sent successfully!</h1>
+    <p>Thank you! I will reply to you soon!</p>
 
-    <script>
-      //auto redirect
-      setTimeout(function () {
-        window.location.href = "/";
-      }, 3000);
+    <p>Redirecting back to the homepage.....</p>
+    <button type="button">Go Back Now</button>
+  </main>
 
-      // Function for manual back
-      document.querySelector("button").addEventListener("click", () => {
-        window.location.href = "/";
-      });
-    </script>
-  </body>
+  <script>
+    //auto redirect
+    setTimeout(function () {
+      window.location.href = "/";
+    }, 3000);
+
+    // Function for manual back
+    document.querySelector("button").addEventListener("click", () => {
+      window.location.href = "/";
+    });
+  </script>
+</body>
+
 </html>

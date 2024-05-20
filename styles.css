@@ -4,11 +4,7 @@
   --primary-color: #ffffff;
   --accent-color: #3b82f6;
   --accent-color-alt: #2563eb;
-  --bg-gradient: linear-gradient(
-    to right,
-    var(--accent-color),
-    var(--accent-color-alt)
-  );
+  --bg-gradient: linear-gradient(to right, var(--accent-color), var(--accent-color-alt));
 }
 
 * {
@@ -22,13 +18,7 @@ html {
 }
 
 body {
-  font-family:
-    system-ui,
-    -apple-system,
-    "Segoe UI",
-    Ubuntu,
-    Roboto,
-    sans-serif;
+  font-family: system-ui, -apple-system, "Segoe UI", Ubuntu, Roboto, sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
   margin: 0;
@@ -95,10 +85,6 @@ h2 {
 
 h3 {
   color: var(--accent-color);
-}
-
-p {
-  text-wrap: balance;
 }
 
 button,
@@ -197,7 +183,7 @@ footer img {
   justify-content: space-evenly;
 }
 
-#projects .links > * {
+#projects .links>* {
   min-width: fit-content;
 }
 
