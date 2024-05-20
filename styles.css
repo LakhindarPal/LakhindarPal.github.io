@@ -1,0 +1,211 @@
+:root {
+  --background-color: #1a202c;
+  --text-color: #cbd5e0;
+  --primary-color: #ffffff;
+  --accent-color: #3b82f6;
+  --accent-color-alt: #2563eb;
+  --bg-gradient: linear-gradient(
+    to right,
+    var(--accent-color),
+    var(--accent-color-alt)
+  );
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: dark;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5em;
+}
+
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Ubuntu,
+    Roboto,
+    sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer {
+  background: var(--bg-gradient);
+  color: var(--primary-color);
+  padding: 1rem;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  box-shadow: 0 4px 8px rgba(256, 256, 256, 0.1);
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+nav a {
+  font-weight: bold;
+  color: inherit;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a:active {
+  font-weight: bolder;
+}
+
+main {
+  padding: 1rem;
+}
+
+section,
+#projects article {
+  margin-block: 1rem;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(256, 256, 256, 0.1);
+}
+
+h1 {
+  background: var(--bg-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+h2 {
+  color: var(--accent-color-alt);
+  border-bottom: 2px solid var(--text-color);
+}
+
+h3 {
+  color: var(--accent-color);
+}
+
+p {
+  text-wrap: balance;
+}
+
+button,
+input,
+textarea,
+li {
+  font: inherit;
+}
+
+strong,
+a,
+label {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+main a,
+button {
+  padding: 0.5rem 1rem;
+  background-color: var(--accent-color);
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+main a {
+  border: 1px solid #000000;
+}
+
+button {
+  color: var(--primary-color);
+  cursor: pointer;
+  width: 50%;
+  display: block;
+  margin-inline: auto;
+}
+
+button:hover,
+main a:hover {
+  background-color: var(--accent-color-alt);
+}
+
+footer {
+  font-size: small;
+  text-align: center;
+}
+
+#hero {
+  text-align: center;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+#hero img,
+nav img {
+  border-radius: 50%;
+}
+
+#skills img {
+  height: 32px;
+  width: 32px;
+}
+
+footer img {
+  width: 24px;
+  height: 24px;
+}
+
+#skills .container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+#skills ul {
+  padding-left: 0.5rem;
+}
+
+#projects,
+#projects article {
+  padding: 1rem;
+}
+
+#projects img {
+  display: block;
+  margin-inline: auto;
+}
+
+#projects .links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#projects .links > * {
+  min-width: fit-content;
+}
+
+input,
+textarea {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--accent-color);
+  margin-block: 0.5rem 1rem;
+  width: 100%;
+}
