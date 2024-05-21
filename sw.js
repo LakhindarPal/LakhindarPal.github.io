@@ -1,5 +1,5 @@
 // Files to cache
-const cacheName = "lp-www-v0.1.0";
+const cacheName = "lp-www-v0.1.2";
 const cacheFiles = [
   "/",
   "./index.html",
@@ -24,8 +24,9 @@ self.addEventListener("fetch", (event) => {
   if (
     !event.request.url.startsWith("http:") &&
     !event.request.url.startsWith("https:")
-  )
+  ) {
     return;
+  }
 
   event.respondWith(
     (async () => {
